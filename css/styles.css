@@ -246,3 +246,7 @@ body {
         font-size: 15px;
     }
 }
+
+.task-input-container>* {
+    min-width: 0;
+}
