@@ -1,7 +1,7 @@
 # STRIKE ⚡ – Task Tracker
 
 STRIKE is a **dark-themed, minimal, and modern task tracking web app** built using **HTML, CSS, and Vanilla JavaScript**.  
-It helps you plan tasks **date-wise**, prioritize them, and track progress visually — all without any backend or frameworks.
+It helps you plan tasks **date-wise**, prioritize them, and track progress visually, all without any backend or frameworks.
 
 ---
 
