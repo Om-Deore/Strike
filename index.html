@@ -4,35 +4,48 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Strike</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>STRIKE - Task Tracker</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Orbitron:wght@700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
 
-    <!-- App Container -->
     <div class="app">
 
-        <!-- Header -->
         <header class="header">
-            <h1 class="logo">Strike</h1>
+            <div class="logo-container">
+                <h1 class="logo strike-font">STRIKE</h1>
+            </div>
 
             <div class="header-actions">
-                <div class="avatar"></div>
-                <div class="toggle"></div>
+                <div class="avatar">
+                    <img src="strike.png" alt="User" />
+                </div>
+
+                <div class="progress-pill">
+                    <div class="progress-fill"></div>
+                </div>
             </div>
         </header>
 
-        <!-- Task Input -->
-        <section class="task-input">
-            <input type="text" id="taskInput" placeholder="Add New Task" />
+        <section class="task-input-container">
+            <input type="text" id="taskInput" placeholder="What's the mission?" />
+            <input type="date" id="dateInput" />
+
+            <select id="prioritySelect">
+                <option value="high">High</option>
+                <option value="medium" selected>Medium</option>
+                <option value="low">Low</option>
+            </select>
+
             <button id="addTaskBtn">+</button>
         </section>
 
-        <!-- Task List -->
-        <section class="task-list" id="taskList">
-            <!-- Tasks will be injected here by JS -->
-        </section>
+        <section class="task-list" id="taskList"></section>
 
     </div>
 
